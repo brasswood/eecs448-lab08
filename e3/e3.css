@@ -1,0 +1,40 @@
+body
+{
+    background-image: url(garfield-dim-2.png); background-size: contain;
+    background-repeat: no-repeat; background-attachment: fixed;
+}
+
+#bio
+{
+    background-color: lightcoral;
+}
+
+#political
+{
+    color: orange;
+    font-family: fantasy;
+    font-size: xx-large;
+}
+
+a:hover
+{
+    background-color: yellow;
+}
+
+div.small-hint
+{
+    font-size: small;
+}
+
+h1
+{
+    text-align: center;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%
+}

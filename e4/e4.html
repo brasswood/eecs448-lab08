@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Exercise 4: CSS Manipulation</title>
+        <script type="text/javascript" src="e4.js"></script>
+    </head>
+    <body>
+        <p id="text" style="border-style: solid">
+            some dummy text
+        </p>
+        <p>
+            <b>Border:</b><br>
+            <form name="border">
+                <label for="red-value">Red Value (0-255): </label>
+                <input type="text" id="border-red-value"><br>
+                <label for="green-value">Green Value (0-255): </label>
+                <input type="text" id="border-green-value"><br>
+                <label for="blue-value">Blue Value (0-255): </label>
+                <input type="text" id="border-blue-value"><br>
+                <label for="width">Width: </label>
+                <input type="text" id="border-width"><br>
+            </form>
+        </p>
+        <p>
+            <b>Background Color:</b><br>
+            <form name="background-color">
+                <label for="red-value">Red Value (0-255): </label>
+                <input type="text" id="background-red-value"><br>
+                <label for="green-value">Green Value (0-255): </label>
+                <input type="text" id="background-green-value"><br>
+                <label for="blue-value">Blue Value (0-255): </label>
+                <input type="text" id="background-blue-value">
+            </form>
+        </p>
+        <button id="submit-button" onclick="submit()">Submit</button> 
+    </body>
+</html>

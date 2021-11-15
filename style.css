@@ -1,0 +1,21 @@
+table
+{
+    background-color: lemonchiffon;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+th, td
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 4px 4px 4px 4px;
+    width: 50%
+}
+
+body
+{
+    background-color: linen
+}
