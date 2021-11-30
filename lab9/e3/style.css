@@ -1,0 +1,59 @@
+h1, h2, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.border {
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+.centerTable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px
+}
+
+div.quantity {
+    float: right
+}
+
+input.quantity {
+    width: 60px
+}
+
+input.login {
+    float: right;
+    margin-left: 10px
+}
+
+#submitWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#submitButton {
+    margin-left: 10px
+}
+
+td.blue {
+    background-color: paleturquoise
+}
+
+td, th {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.yellow {
+    background-color: lemonchiffon
+}

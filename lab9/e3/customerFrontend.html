@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>The Store</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="e3"></script>
+    </head>
+</html>
+
+<body class="yellow">
+    <h1>The Store</h1>
+    <h2><em>It is the store</em>&#8482;</h2>
+
+    <form id="theform" action="customerBackend.php" method=post></form>
+    <table class="centerTable border">
+        <thead>
+            <th class="border">Chair</th>
+            <th class="border">Napkin</th>
+            <th class="border">Yeezys</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border">
+                    <img src="assets/chair.jpeg" width="250">
+                </td>
+                <td class="border">
+                    <img src="assets/napkin.jpeg" width="250">
+                </td>
+                <td class="border">
+                    <img src="assets/yeezys.jpeg" width="250">
+                </td>
+            </tr>
+            <tr>
+                <td class="border">
+                    Price: $200
+                    <div class="quantity">
+                    <label for="numChairs">Qty: </label>
+                    <input type="number" min="0" required value="0" form="theform" name="numChairs" class="quantity">
+                    </div>
+                </td>
+                <td class="border">
+                    Price: $300
+                    <div class="quantity">
+                    <label for="numNapkins">Qty: </label>
+                    <input type="number" min="0" required value="0" form="theform" name="numNapkins" class="quantity">
+                    </div>
+                </td>
+                <td class="border">
+                    Price: $8
+                    <div class="quantity">
+                    <label for="numYeezys">Qty: </label>
+                    <input type="number" min="0" required value="0" form="theform" name="numYeezys" class="quantity">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="centerTable border">
+        <tbody>
+            <tr>
+                <td>Select shipping:</td>
+                <td class="border">
+                    <input type="radio" name="shipping" value="7-Day" form="theform" required>
+                    <label for="7day">7-Day Shipping (Free)</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="border">
+                    <input type="radio" name="shipping" value="3-Day" form="theform" required>
+                    <label for="3day">3-Day Shipping ($5)</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="border">
+                    <input type="radio" name="shipping" value="Overnight" form="theform" required>
+                    <label>Overnight Shipping ($50)</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="centerTable">
+        <thead>
+            <th>Input Credentials: </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="username">Username: </label>
+                    <input type="email" name="username" form="theform" class="login" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" form="theform" class="login" required>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="submitWrapper">
+        <input type="reset" form="theform" id="resetButton"> <input type="submit" form="theform" id="submitButton">
+    </div>
+</body>
