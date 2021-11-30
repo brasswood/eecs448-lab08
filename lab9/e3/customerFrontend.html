@@ -2,7 +2,7 @@
     <head>
         <title>The Store</title>
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="e3"></script>
+        <script type="text/javascript" src="formChecker.js"></script>
     </head>
 </html>
 
@@ -10,7 +10,7 @@
     <h1>The Store</h1>
     <h2><em>It is the store</em>&#8482;</h2>
 
-    <form id="theform" action="customerBackend.php" method=post></form>
+    <form id="theform" action="customerBackend.php" method="post" onsubmit="return validate()" novalidate></form>
     <table class="centerTable border">
         <thead>
             <th class="border">Chair</th>
@@ -34,21 +34,21 @@
                     Price: $200
                     <div class="quantity">
                     <label for="numChairs">Qty: </label>
-                    <input type="number" min="0" required value="0" form="theform" name="numChairs" class="quantity">
+                    <input type="number" min="0" form="theform" name="numChairs" class="quantity">
                     </div>
                 </td>
                 <td class="border">
                     Price: $300
                     <div class="quantity">
                     <label for="numNapkins">Qty: </label>
-                    <input type="number" min="0" required value="0" form="theform" name="numNapkins" class="quantity">
+                    <input type="number" min="0" form="theform" name="numNapkins" class="quantity">
                     </div>
                 </td>
                 <td class="border">
                     Price: $8
                     <div class="quantity">
                     <label for="numYeezys">Qty: </label>
-                    <input type="number" min="0" required value="0" form="theform" name="numYeezys" class="quantity">
+                    <input type="number" min="0" form="theform" name="numYeezys" class="quantity">
                     </div>
                 </td>
             </tr>
@@ -60,21 +60,21 @@
             <tr>
                 <td>Select shipping:</td>
                 <td class="border">
-                    <input type="radio" name="shipping" value="7-Day" form="theform" required>
+                    <input type="radio" name="shipping" value="7-Day" form="theform">
                     <label for="7day">7-Day Shipping (Free)</label>
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td class="border">
-                    <input type="radio" name="shipping" value="3-Day" form="theform" required>
+                    <input type="radio" name="shipping" value="3-Day" form="theform">
                     <label for="3day">3-Day Shipping ($5)</label>
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td class="border">
-                    <input type="radio" name="shipping" value="Overnight" form="theform" required>
+                    <input type="radio" name="shipping" value="Overnight" form="theform">
                     <label>Overnight Shipping ($50)</label>
                 </td>
             </tr>
@@ -89,13 +89,13 @@
             <tr>
                 <td>
                     <label for="username">Username: </label>
-                    <input type="email" name="username" form="theform" class="login" required>
+                    <input type="email" name="username" form="theform" class="login">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="password">Password: </label>
-                    <input type="password" name="password" form="theform" class="login" required>
+                    <input type="password" name="password" form="theform" class="login">
                 </td>
             </tr>
         </tbody>
